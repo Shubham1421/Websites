@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Navbar from './Navbar';
 import targetLinks from '../data/links'; // Import the array from the separate file
+import FashionLifestyleBlog from './FashionLifestyleBlog';
 
 const Redirect = () => {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ const Redirect = () => {
   // Get the link associated with the target
   const redirectLink = targetLinks[target] || '/default'; // Use a default link if target doesn't match
   
-  const [secondsRemaining, setSecondsRemaining] = useState(3);
+  const [secondsRemaining, setSecondsRemaining] = useState(6);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -36,12 +37,13 @@ const Redirect = () => {
       <div className="container text-center">
         <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>
           Redirecting in {secondsRemaining} seconds...
-          <br /> <br /> <h5> redirecting to {redirectLink} </h5>
+          {/* <br /> <br /> <h5> redirecting to {redirectLink} </h5> */}
         </div>
         <div className="spinner-border" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
       </div>
+      <FashionLifestyleBlog/>
     </div>
   );
 };

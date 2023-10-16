@@ -1,0 +1,39 @@
+/* FashionLifestyleBlog.css */
+
+.fashion-lifestyle-blog {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .fashion-lifestyle-blog h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .fashion-lifestyle-blog section {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .fashion-lifestyle-blog h2 {
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .fashion-lifestyle-blog p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .fashion-lifestyle-blog img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+  
